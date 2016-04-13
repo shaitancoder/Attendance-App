@@ -1,0 +1,129 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="fill_parent"
+      android:background="#0c1d28"
+    android:layout_height="match_parent"
+   
+    >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+<TableLayout 
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#a1bbcb"
+    android:paddingBottom="2dp"
+    tools:context=".View_Attendance_Activity"
+     android:weightSum="100"
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4000"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:text="Class name"
+    android:textStyle="bold"
+    android:paddingRight="15dp"
+   />
+
+ <Spinner
+                android:id="@+id/classes"
+                android:layout_width="232dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:entries="@array/classes" />
+    </LinearLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="10"
+    android:layout_weight="10">
+    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:text="Course name" 
+    android:textStyle="bold"
+    android:paddingRight="15dp"
+   />
+    
+    <Spinner
+                android:id="@+id/courses"
+                android:layout_width="232dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:entries="@array/courses" />
+
+    </LinearLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="10"
+    android:layout_weight="10">
+    
+<TextView
+    android:id="@+id/deliver"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:text="Delivered" 
+    android:textStyle="bold"
+    android:paddingRight="15dp"
+    android:visibility="invisible"
+   />
+
+<EditText
+    android:id="@+id/deliver_edit"
+    android:layout_width="232dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:paddingLeft="10dp" 
+    android:visibility="invisible"
+    >
+
+    <requestFocus />
+</EditText>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_bg"
+                android:orientation="horizontal"
+                android:text="Show"
+                android:textColor="#cbcbcb"
+                android:textStyle="bold" />
+        </LinearLayout>
+    
+</TableLayout>
+</HorizontalScrollView>
+</ScrollView>

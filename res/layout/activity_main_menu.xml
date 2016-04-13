@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2f4552" >
+
+    <ScrollView
+        android:id="@+id/ScrollView02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="#2f4552"
+        android:gravity="center"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2f4552"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button_view"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_bg"
+                android:text="View Attendance"
+                android:textColor="#cbcbcb"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_manage"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_bg"
+                android:text="Mark Attendance"
+                android:textColor="#cbcbcb"
+                android:textStyle="bold" />
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
